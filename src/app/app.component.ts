@@ -7,11 +7,12 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { TooltipDirective } from './directives/tooltip.directive';
 import { FormsModule } from '@angular/forms';
 import { NumbericOnlyDirective } from './directives/numeric.directive';
+import { ArticlesComponent } from "./components/articles/articles.component";
 
 @Component({
   selector: 'app-root',
   imports: [TruncatePipe, InitialsPipe, FormsModule, NumbericOnlyDirective,
-     RemoveDuplicatesPipe, HighlightDirective, TooltipDirective],
+    RemoveDuplicatesPipe, HighlightDirective, TooltipDirective, ArticlesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
