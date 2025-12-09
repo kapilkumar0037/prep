@@ -8,11 +8,13 @@ import { TooltipDirective } from './directives/tooltip.directive';
 import { FormsModule } from '@angular/forms';
 import { NumbericOnlyDirective } from './directives/numeric.directive';
 import { ArticlesComponent } from "./components/articles/articles.component";
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
+import { TemplateFormComponent } from "./components/template-form/template-form.component";
 
 @Component({
   selector: 'app-root',
   imports: [TruncatePipe, InitialsPipe, FormsModule, NumbericOnlyDirective,
-    RemoveDuplicatesPipe, HighlightDirective, TooltipDirective, ArticlesComponent],
+    RemoveDuplicatesPipe, HighlightDirective, TooltipDirective, ArticlesComponent, ReactiveFormComponent, TemplateFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
